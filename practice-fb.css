@@ -37,27 +37,55 @@ header a:hover {
 }
 
 img {
-    height:auto;
-    max-width:300px;
+    width: 20vw;
+    min-width: 150px;
+    
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-}
-
-main p {
-
+    justify-content: flex-end;
 }
 
 article {
     background:lightslategray;
-    flex: 70%;
+    display: flex;
+    flex: 4;
+    flex-wrap: wrap;
+    align-content: center;
+    
 }
+
+article h2 {
+background: rebeccapurple;
+flex-grow: 1;
+}
+
+article img {
+    float: left;
+}
+
+
+article p {
+    background: yellow;
+   flex: 1;
+}
+
+article section {
+    align-self:flex-start;
+}
+
+/* #img-main {
+    background: hotpink;
+    flex: 1;
+    
+} */
+
 
 aside {
     background:lightsalmon;
-    flex: 30%;
+  flex: 1;
 }
 
 footer {
